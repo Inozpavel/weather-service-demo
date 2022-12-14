@@ -15,22 +15,22 @@ public class WeatherForecastController : ControllerBase
     };
 
     [HttpGet]
-    public IEnumerable<WeatherForecast> Get()
+    public ForecastResponseModel Get()
     {
         var random = new Random();
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        return new ForecastResponseModel(Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = random.Next(-20, 55),
                 Summary = _summaries[random.Next(_summaries.Length)]
             })
-            .ToArray();
+            .ToList());
     }
 
-    [HttpGet("/{personName}")]
-    public string GetForPerson([FromRoute] string personName)
+    [HttpGet("{personName}")]
+    public ForecastForPerson GetForPerson([FromRoute] string personName)
     {
         var random = new Random();
-        return $"Weather for {personName}: {_summaries[random.Next(_summaries.Length)]}";
+        return new ForecastForPerson($"Weather for {personName}: {_summaries[random.Next(_summaries.Length)]}");
     }
 }

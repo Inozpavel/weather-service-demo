@@ -12,3 +12,5 @@ public class WeatherForecast
 
     public string Summary { get; set; }
 }
+    
+public record ForecastForPerson(string Forecast);
