@@ -10,6 +10,7 @@ public class WeatherForecastControllerTests
     [TestCase("Name")]
     [TestCase("Name with space")]
     [TestCase("123")]
+    [TestCase("constantPerson")]
     public void CanFetForecastForUser(string username)
     {
         var controller = new WeatherForecastController();

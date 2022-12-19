@@ -31,6 +31,6 @@ public class WeatherForecastController : ControllerBase
     public ForecastForPerson GetForPerson([FromRoute] string personName)
     {
         var random = new Random();
-        return new ForecastForPerson($"Weather for {personName}: {_summaries[random.Next(_summaries.Length)]}");
+        return new ForecastForPerson($"Weather for constantPerson: {_summaries[random.Next(_summaries.Length)]}");
     }
 }
