@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{24B45D
 		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherMicroservice.Tests", "WeatherMicroservice.Tests\WeatherMicroservice.Tests.csproj", "{5BC984A6-A7F2-4D30-BC7A-009C15C20A8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,5 +19,9 @@ Global
 		{A65EF9BE-5C57-488A-A5CD-BF84EC9E7C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A65EF9BE-5C57-488A-A5CD-BF84EC9E7C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A65EF9BE-5C57-488A-A5CD-BF84EC9E7C08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BC984A6-A7F2-4D30-BC7A-009C15C20A8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC984A6-A7F2-4D30-BC7A-009C15C20A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC984A6-A7F2-4D30-BC7A-009C15C20A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC984A6-A7F2-4D30-BC7A-009C15C20A8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
